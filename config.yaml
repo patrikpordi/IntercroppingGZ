@@ -1,0 +1,32 @@
+world:
+  name: intercrop_world
+  output_file: worlds/intercrop_world.sdf
+
+field:
+  num_rows: 10
+  row_length: 15.0
+  row_spacing: 1.0
+  plant_spacing: 0.25
+
+origin:
+  start_x: -5.0
+  start_y: 0.0
+  plant_z: 0.0
+
+crops:
+  even_rows: crop_row_a
+  odd_rows: crop_row_b
+
+lighting:
+  ambient: [0.7, 0.7, 0.7, 1]
+  background: [0.85, 0.9, 1.0, 1]
+
+sun:
+  pose: [0, 0, 50, 0, 0, 0]
+  diffuse: [1.0, 1.0, 1.0, 1]
+  specular: [0.2, 0.2, 0.2, 1]
+  direction: [-0.5, 0.1, -1]
+
+ground:
+  model: ground
+  pose: [0, 0, 0, 0, 0, 0]

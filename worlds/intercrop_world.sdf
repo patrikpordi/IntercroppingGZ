@@ -1,0 +1,3643 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+
+  <world name="intercrop_world">
+
+    <!-- Physics -->
+    <physics type="ignored">
+      <max_step_size>0.001</max_step_size>
+    </physics>
+
+    <!-- Scene -->
+    <scene>
+      <ambient>0.7 0.7 0.7 1</ambient>
+      <background>0.85 0.9 1.0 1</background>
+    </scene>
+
+    <!-- Sun -->
+    <light type="directional" name="sun">
+
+      <cast_shadows>true</cast_shadows>
+
+      <pose>0 0 50 0 0 0</pose>
+
+      <diffuse>1.0 1.0 1.0 1</diffuse>
+
+      <specular>0.2 0.2 0.2 1</specular>
+
+      <direction>-0.5 0.1 -1</direction>
+
+    </light>
+
+    <!-- Ground -->
+    <include>
+      <uri>model://ground</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <!-- Crops -->
+    
+    <include>
+      <name>crop_row_a_0</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-5.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_1</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_2</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_3</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_4</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_5</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_6</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_7</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_8</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_9</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_10</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_11</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_12</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_13</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_14</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_15</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_16</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_17</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_18</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_19</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_20</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_21</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_22</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_23</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_24</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_25</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_26</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_27</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_28</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_29</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_30</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_31</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_32</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_33</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_34</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_35</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_36</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_37</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_38</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_39</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_40</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_41</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_42</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_43</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_44</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_45</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_46</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_47</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_48</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_49</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_50</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_51</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_52</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_53</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_54</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_55</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_56</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.0 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_57</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.25 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_58</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.5 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_59</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.75 -4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_60</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-5.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_61</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_62</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_63</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_64</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_65</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_66</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_67</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_68</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_69</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_70</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_71</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_72</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_73</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_74</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_75</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_76</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_77</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_78</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_79</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_80</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_81</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_82</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_83</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_84</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_85</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_86</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_87</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_88</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_89</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_90</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_91</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_92</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_93</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_94</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_95</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_96</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_97</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_98</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_99</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_100</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_101</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_102</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_103</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_104</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_105</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_106</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_107</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_108</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_109</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_110</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_111</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_112</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_113</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_114</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_115</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_116</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.0 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_117</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.25 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_118</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.5 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_119</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.75 -3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_120</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-5.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_121</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_122</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_123</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_124</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_125</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_126</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_127</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_128</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_129</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_130</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_131</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_132</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_133</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_134</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_135</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_136</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_137</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_138</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_139</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_140</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_141</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_142</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_143</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_144</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_145</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_146</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_147</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_148</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_149</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_150</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_151</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_152</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_153</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_154</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_155</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_156</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_157</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_158</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_159</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_160</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_161</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_162</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_163</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_164</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_165</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_166</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_167</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_168</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_169</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_170</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_171</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_172</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_173</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_174</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_175</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_176</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.0 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_177</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.25 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_178</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.5 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_179</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.75 -2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_180</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-5.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_181</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_182</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_183</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_184</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_185</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_186</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_187</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_188</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_189</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_190</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_191</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_192</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_193</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_194</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_195</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_196</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_197</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_198</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_199</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_200</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_201</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_202</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_203</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_204</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_205</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_206</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_207</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_208</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_209</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_210</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_211</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_212</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_213</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_214</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_215</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_216</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_217</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_218</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_219</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_220</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_221</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_222</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_223</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_224</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_225</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_226</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_227</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_228</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_229</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_230</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_231</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_232</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_233</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_234</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_235</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_236</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.0 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_237</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.25 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_238</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.5 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_239</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.75 -1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_240</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-5.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_241</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_242</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_243</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_244</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_245</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_246</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_247</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_248</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_249</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_250</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_251</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_252</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_253</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_254</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_255</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_256</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_257</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_258</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_259</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_260</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_261</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_262</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_263</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_264</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_265</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_266</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_267</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_268</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_269</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_270</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_271</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_272</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_273</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_274</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_275</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_276</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_277</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_278</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_279</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_280</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_281</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_282</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_283</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_284</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_285</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_286</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_287</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_288</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_289</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_290</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_291</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_292</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_293</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_294</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_295</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_296</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.0 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_297</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.25 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_298</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.5 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_299</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.75 -0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_300</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-5.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_301</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_302</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_303</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_304</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_305</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_306</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_307</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_308</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_309</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_310</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_311</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_312</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_313</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_314</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_315</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_316</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_317</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_318</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_319</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_320</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_321</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_322</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_323</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_324</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_325</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_326</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_327</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_328</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_329</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_330</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_331</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_332</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_333</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_334</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_335</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_336</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_337</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_338</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_339</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_340</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_341</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_342</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_343</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_344</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_345</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_346</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_347</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_348</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_349</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_350</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_351</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_352</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_353</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_354</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_355</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_356</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.0 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_357</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.25 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_358</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.5 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_359</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.75 0.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_360</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-5.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_361</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_362</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_363</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_364</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_365</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_366</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_367</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_368</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_369</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_370</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_371</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_372</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_373</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_374</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_375</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_376</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_377</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_378</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_379</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_380</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_381</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_382</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_383</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_384</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_385</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_386</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_387</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_388</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_389</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_390</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_391</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_392</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_393</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_394</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_395</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_396</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_397</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_398</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_399</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_400</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_401</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_402</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_403</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_404</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_405</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_406</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_407</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_408</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_409</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_410</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_411</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_412</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_413</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_414</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_415</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_416</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.0 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_417</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.25 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_418</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.5 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_419</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.75 1.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_420</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-5.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_421</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_422</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_423</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_424</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_425</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_426</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_427</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_428</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_429</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_430</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_431</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_432</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_433</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_434</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_435</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_436</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_437</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_438</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_439</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_440</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_441</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_442</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_443</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_444</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_445</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_446</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_447</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_448</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_449</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_450</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_451</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_452</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_453</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_454</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_455</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_456</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_457</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_458</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_459</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_460</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_461</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_462</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_463</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_464</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_465</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_466</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_467</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_468</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_469</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_470</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_471</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_472</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_473</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_474</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_475</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_476</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.0 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_477</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.25 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_478</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.5 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_479</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.75 2.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_480</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-5.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_481</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_482</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_483</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_484</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-4.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_485</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_486</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_487</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_488</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-3.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_489</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_490</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_491</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_492</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-2.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_493</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_494</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_495</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_496</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-1.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_497</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_498</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_499</name>
+      <uri>model://crop_row_a</uri>
+      <pose>-0.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_500</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_501</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_502</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_503</name>
+      <uri>model://crop_row_a</uri>
+      <pose>0.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_504</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_505</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_506</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_507</name>
+      <uri>model://crop_row_a</uri>
+      <pose>1.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_508</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_509</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_510</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_511</name>
+      <uri>model://crop_row_a</uri>
+      <pose>2.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_512</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_513</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_514</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_515</name>
+      <uri>model://crop_row_a</uri>
+      <pose>3.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_516</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_517</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_518</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_519</name>
+      <uri>model://crop_row_a</uri>
+      <pose>4.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_520</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_521</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_522</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_523</name>
+      <uri>model://crop_row_a</uri>
+      <pose>5.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_524</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_525</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_526</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_527</name>
+      <uri>model://crop_row_a</uri>
+      <pose>6.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_528</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_529</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_530</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_531</name>
+      <uri>model://crop_row_a</uri>
+      <pose>7.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_532</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_533</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_534</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_535</name>
+      <uri>model://crop_row_a</uri>
+      <pose>8.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_536</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.0 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_537</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.25 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_538</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.5 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_a_539</name>
+      <uri>model://crop_row_a</uri>
+      <pose>9.75 3.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_540</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-5.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_541</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_542</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_543</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_544</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-4.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_545</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_546</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_547</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_548</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-3.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_549</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_550</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_551</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_552</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-2.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_553</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_554</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_555</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_556</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-1.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_557</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_558</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_559</name>
+      <uri>model://crop_row_b</uri>
+      <pose>-0.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_560</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_561</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_562</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_563</name>
+      <uri>model://crop_row_b</uri>
+      <pose>0.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_564</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_565</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_566</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_567</name>
+      <uri>model://crop_row_b</uri>
+      <pose>1.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_568</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_569</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_570</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_571</name>
+      <uri>model://crop_row_b</uri>
+      <pose>2.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_572</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_573</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_574</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_575</name>
+      <uri>model://crop_row_b</uri>
+      <pose>3.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_576</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_577</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_578</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_579</name>
+      <uri>model://crop_row_b</uri>
+      <pose>4.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_580</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_581</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_582</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_583</name>
+      <uri>model://crop_row_b</uri>
+      <pose>5.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_584</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_585</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_586</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_587</name>
+      <uri>model://crop_row_b</uri>
+      <pose>6.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_588</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_589</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_590</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_591</name>
+      <uri>model://crop_row_b</uri>
+      <pose>7.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_592</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_593</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_594</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_595</name>
+      <uri>model://crop_row_b</uri>
+      <pose>8.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_596</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.0 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_597</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.25 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_598</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.5 4.5 0.0 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>crop_row_b_599</name>
+      <uri>model://crop_row_b</uri>
+      <pose>9.75 4.5 0.0 0 0 0</pose>
+    </include>
+    
+
+  </world>
+
+</sdf>
