@@ -4,6 +4,12 @@
   <version>0.0.1</version>
   <description>Generating intercropping fields for Gazebo.</description>
 
+  <maintainer email="jeppha@mmmi.sdu.dk">Jeppe Hansen</maintainer>
+  <maintainer email="pad@mmmi.sdu.dk">Patrik Pördi</maintainer>
+  <maintainer email="bsoe@mmmi.sdu.dk">Ben Søberg</maintainer>
+
+  <license>MIT</license>
+
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <exec_depend>python3-yaml</exec_depend>
