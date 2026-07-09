@@ -2,15 +2,15 @@
 
 import os
 import yaml
+from pathlib import Path
+from ament_index_python.packages import get_package_share_directory
 
 # --------------------------------------------------
 # PATHS
 # --------------------------------------------------
 
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.dirname(SCRIPT_DIR)
-
-CONFIG_FILE = os.path.join(PROJECT_ROOT, "config.yaml")
+PACKAGE_DIR = Path(get_package_share_directory("intercropping_gz"))
+CONFIG_FILE = PACKAGE_DIR / 'config' / "config.yaml"
 
 # --------------------------------------------------
 # LOAD CONFIG
@@ -24,7 +24,8 @@ with open(CONFIG_FILE, "r") as f:
 # --------------------------------------------------
 
 WORLD_NAME = cfg["world"]["name"]
-OUTPUT_FILE = os.path.join(PROJECT_ROOT, cfg["world"]["output_file"])
+SOURCE_ROOT = CONFIG_FILE.resolve().parents[2] if CONFIG_FILE.is_symlink() else PACKAGE_DIR # Resolve symlinks back to the source directory if installed as symlinks, otherwise just use package directory
+OUTPUT_FILE = SOURCE_ROOT / cfg["world"]["output_file"]
 
 NUM_ROWS = cfg["field"]["num_rows"]
 ROW_LENGTH = cfg["field"]["row_length"]
