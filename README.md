@@ -74,6 +74,7 @@ Edit `config/config.yaml` to change basic parameters such as:
 - `field.num_rows`, `field.row_length`, `field.row_spacing`, `field.plant_spacing`
 - `origin.start_x`, `origin.start_y`, `origin.plant_z`
 - `crops.even_rows`, `crops.odd_rows` — which models alternate between rows
+- `crops.even_rows_collision`, `crops.odd_rows_collision` — set `false` to spawn that row's plants without collision geometry (visual-only, via a `_no_collision` model variant); defaults to `true`
 - `ground.model`, `ground.pose`
 - `lighting` and `sun` — scene ambient/background and sun pose/color/direction
 - `world.name`, `world.output_file`
