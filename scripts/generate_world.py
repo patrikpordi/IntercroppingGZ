@@ -36,8 +36,18 @@ START_X = cfg["origin"]["start_x"]
 START_Y = cfg["origin"]["start_y"]
 PLANT_Z = cfg["origin"]["plant_z"]
 
-EVEN_ROW_MODEL = cfg["crops"]["even_rows"]
-ODD_ROW_MODEL = cfg["crops"]["odd_rows"]
+def resolve_model(model, collision):
+    return model if collision else f"{model}_no_collision"
+
+
+EVEN_ROW_MODEL = resolve_model(
+    cfg["crops"]["even_rows"],
+    cfg["crops"].get("even_rows_collision", True)
+)
+ODD_ROW_MODEL = resolve_model(
+    cfg["crops"]["odd_rows"],
+    cfg["crops"].get("odd_rows_collision", True)
+)
 
 GROUND_MODEL = cfg["ground"]["model"]
 GROUND_POSE = cfg["ground"]["pose"]
