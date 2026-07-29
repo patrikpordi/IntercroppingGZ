@@ -24,7 +24,7 @@ with open(CONFIG_FILE, "r") as f:
 # --------------------------------------------------
 
 WORLD_NAME = cfg["world"]["name"]
-SOURCE_ROOT = CONFIG_FILE.resolve().parents[2] if CONFIG_FILE.is_symlink() else PACKAGE_DIR # Resolve symlinks back to the source directory if installed as symlinks, otherwise just use package directory
+SOURCE_ROOT = CONFIG_FILE.resolve().parents[1] if CONFIG_FILE.is_symlink() else PACKAGE_DIR # Resolve symlinks back to the source directory if installed as symlinks, otherwise just use package directory
 OUTPUT_FILE = SOURCE_ROOT / cfg["world"]["output_file"]
 
 NUM_ROWS = cfg["field"]["num_rows"]
