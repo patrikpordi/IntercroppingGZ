@@ -75,6 +75,8 @@ Edit `config/config.yaml` to change basic parameters such as:
 - `origin.start_x`, `origin.start_y`, `origin.plant_z`
 - `crops.even_rows`, `crops.odd_rows` — which models alternate between rows
 - `crops.even_rows_collision`, `crops.odd_rows_collision` — set `false` to spawn that row's plants without collision geometry (visual-only, via a `_no_collision` model variant); defaults to `true`
+- `crop_randomization.enabled` — set `true` to apply pose randomization to the plants using a uniform distribution.
+- `crop_randomization.position`, `crop_randomization.orientation` — configures the upper and lower bound for the uniform distribution, using axis-angles for the orientation.
 - `ground.model`, `ground.pose`
 - `lighting` and `sun` — scene ambient/background and sun pose/color/direction
 - `world.name`, `world.output_file`
