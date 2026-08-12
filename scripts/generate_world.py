@@ -130,6 +130,19 @@ def generate_world():
       <max_step_size>0.001</max_step_size>
     </physics>
 
+    <!-- Systems -->
+    <plugin filename="gz-sim-physics-system"
+      name="gz::sim::systems::Physics"/>
+    
+    <plugin filename="gz-sim-user-commands-system"
+      name="gz::sim::systems::UserCommands"/>
+
+    <plugin filename="gz-sim-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster"/>
+
+    <plugin filename="gz-sim-sensors-system"
+      name="gz::sim::systems::Sensors"/>
+      
     <!-- Scene -->
     <scene>
       <ambient>{vec_to_str(AMBIENT)}</ambient>
