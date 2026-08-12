@@ -4,6 +4,7 @@ import os
 import yaml
 from pathlib import Path
 from ament_index_python.packages import get_package_share_directory
+import random
 
 # --------------------------------------------------
 # PATHS
@@ -67,13 +68,24 @@ SUN_DIRECTION = cfg["sun"]["direction"]
 def vec_to_str(v):
     return " ".join(str(x) for x in v)
 
+def randomize_pose(x, y, z, rx, ry, rz):
+    pos = cfg["crop_randomization"]["position"]
+    ori = cfg["crop_randomization"]["orientation"]
 
-def make_include(model, name, x, y, z=0.0):
+    x += random.uniform(-pos["x"], pos["x"])
+    y += random.uniform(-pos["y"], pos["y"])
+    z += random.uniform(-pos["z"], pos["z"])
+    rx += random.uniform(-ori["roll"], ori["roll"])
+    ry += random.uniform(-ori["pitch"], ori["pitch"])
+    rz += random.uniform(-ori["yaw"], ori["yaw"])
+    return x, y, z, rx, ry, rz
+
+def make_include(model, name, x, y, z=0.0, roll=0.0, pitch=0.0, yaw=0.0):
     return f"""
     <include>
       <name>{name}</name>
       <uri>model://{model}</uri>
-      <pose>{x} {y} {z} 0 0 0</pose>
+      <pose>{x} {y} {z} {roll} {pitch} {yaw}</pose>
     </include>
     """
 
@@ -107,13 +119,26 @@ def generate_world():
 
             name = f"{model}_{idx}"
 
+            x_plant = x
+            y_plant = y
+            z_plant = PLANT_Z
+            rx_plant = 0.0
+            ry_plant = 0.0
+            rz_plant = 0.0
+
+            if cfg.get("crop_randomization", {}).get("enabled", False):
+                x_plant, y_plant, z_plant, rx_plant, ry_plant, rz_plant = randomize_pose(x_plant, y_plant, z_plant, rx_plant, ry_plant, rz_plant)
+            
             includes.append(
                 make_include(
                     model=model,
                     name=name,
-                    x=x,
-                    y=y,
-                    z=PLANT_Z
+                    x=x_plant,
+                    y=y_plant,
+                    z=z_plant,
+                    roll=rx_plant,
+                    pitch=ry_plant,
+                    yaw=rz_plant
                 )
             )
 
