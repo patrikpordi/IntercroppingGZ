@@ -28,6 +28,8 @@ WORLD_NAME = cfg["world"]["name"]
 SOURCE_ROOT = CONFIG_FILE.resolve().parents[1] if CONFIG_FILE.is_symlink() else PACKAGE_DIR # Resolve symlinks back to the source directory if installed as symlinks, otherwise just use package directory
 OUTPUT_FILE = SOURCE_ROOT / cfg["world"]["output_file"]
 
+SPHERICAL_COORDINATES = cfg["spherical_coordinates"]
+
 NUM_ROWS = cfg["field"]["num_rows"]
 ROW_LENGTH = cfg["field"]["row_length"]
 ROW_SPACING = cfg["field"]["row_spacing"]
@@ -150,6 +152,15 @@ def generate_world():
 
   <world name="{WORLD_NAME}">
 
+    <!-- GPS origin: required for PX4 SITL (NavSat fix + magnetometer WMM check) -->
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <world_frame_orientation>ENU</world_frame_orientation>
+      <latitude_deg>{SPHERICAL_COORDINATES["latitude_deg"]}</latitude_deg>
+      <longitude_deg>{SPHERICAL_COORDINATES["longitude_deg"]}</longitude_deg>
+      <elevation>{SPHERICAL_COORDINATES["elevation"]}</elevation>
+    </spherical_coordinates>
+
     <!-- Physics -->
     <physics type="ignored">
       <max_step_size>0.001</max_step_size>
@@ -158,7 +169,7 @@ def generate_world():
     <!-- Systems -->
     <plugin filename="gz-sim-physics-system"
       name="gz::sim::systems::Physics"/>
-    
+
     <plugin filename="gz-sim-user-commands-system"
       name="gz::sim::systems::UserCommands"/>
 
@@ -167,7 +178,29 @@ def generate_world():
 
     <plugin filename="gz-sim-sensors-system"
       name="gz::sim::systems::Sensors"/>
-      
+
+    <!-- PX4 vehicle sensor systems (IMU/baro/compass/GPS on the spawned models) -->
+    <plugin filename="gz-sim-imu-system"
+      name="gz::sim::systems::Imu"/>
+
+    <plugin filename="gz-sim-air-pressure-system"
+      name="gz::sim::systems::AirPressure"/>
+
+    <plugin filename="gz-sim-air-speed-system"
+      name="gz::sim::systems::AirSpeed"/>
+
+    <plugin filename="gz-sim-navsat-system"
+      name="gz::sim::systems::NavSat"/>
+
+    <plugin filename="gz-sim-magnetometer-system"
+      name="gz::sim::systems::Magnetometer"/>
+
+    <plugin filename="gz-sim-contact-system"
+      name="gz::sim::systems::Contact"/>
+
+    <plugin filename="gz-sim-apply-link-wrench-system"
+      name="gz::sim::systems::ApplyLinkWrench"/>
+
     <!-- Scene -->
     <scene>
       <ambient>{vec_to_str(AMBIENT)}</ambient>
