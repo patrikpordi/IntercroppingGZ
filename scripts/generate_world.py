@@ -11,21 +11,36 @@ import random
 # --------------------------------------------------
 
 PACKAGE_DIR = Path(get_package_share_directory("intercropping_gz"))
-CONFIG_FILE = PACKAGE_DIR / 'config' / "config.yaml"
+DEFAULT_CONFIG_FILE = PACKAGE_DIR / 'config' / "config.default.yaml"
+SOURCE_ROOT = DEFAULT_CONFIG_FILE.resolve().parents[1] if DEFAULT_CONFIG_FILE.is_symlink() else PACKAGE_DIR # Resolve symlinks back to the source directory if installed as symlinks, otherwise just use package directory
+LOCAL_CONFIG_FILE = SOURCE_ROOT / 'config' / "config.yaml" # Optional, gitignored per-user overrides
 
 # --------------------------------------------------
 # LOAD CONFIG
 # --------------------------------------------------
 
-with open(CONFIG_FILE, "r") as f:
+def deep_merge(base, override):
+    for key, value in override.items():
+        if isinstance(value, dict) and isinstance(base.get(key), dict):
+            deep_merge(base[key], value)
+        else:
+            base[key] = value
+    return base
+
+
+with open(DEFAULT_CONFIG_FILE, "r") as f:
     cfg = yaml.safe_load(f)
+
+if LOCAL_CONFIG_FILE.exists():
+    with open(LOCAL_CONFIG_FILE, "r") as f:
+        deep_merge(cfg, yaml.safe_load(f) or {})
+    print(f"[INFO] Applied local overrides: {LOCAL_CONFIG_FILE}")
 
 # --------------------------------------------------
 # PARAMETERS FROM YAML
 # --------------------------------------------------
 
 WORLD_NAME = cfg["world"]["name"]
-SOURCE_ROOT = CONFIG_FILE.resolve().parents[1] if CONFIG_FILE.is_symlink() else PACKAGE_DIR # Resolve symlinks back to the source directory if installed as symlinks, otherwise just use package directory
 OUTPUT_FILE = SOURCE_ROOT / cfg["world"]["output_file"]
 
 SPHERICAL_COORDINATES = cfg["spherical_coordinates"]
