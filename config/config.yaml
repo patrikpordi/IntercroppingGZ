@@ -2,9 +2,19 @@ world:
   name: intercrop_world
   output_file: worlds/intercrop_world.sdf
 
+# GPS origin for the world. Required for PX4 SITL: without it, gz-sim's
+# NavSat system has no real-world reference, EKF2 gets no valid GPS fix, and
+# the magnetometer consistency check reports "Strong magnetic interference"
+# since the expected field (from WMM) can't be looked up for a real location.
+# Defaults match PX4's own default.sdf (Zurich).
+spherical_coordinates:
+  latitude_deg: 47.397971057728974
+  longitude_deg: 8.546163739800146
+  elevation: 0.0
+
 field:
   num_rows: 10
-  row_length: 15.0
+  row_length: 10.0
   row_spacing: 1.0
   plant_spacing: 0.25
 
@@ -15,9 +25,9 @@ origin:
 
 crops:
   even_rows: crop_row_a
-  even_rows_collision: true
+  even_rows_collision: false
   odd_rows: crop_row_b
-  odd_rows_collision: true
+  odd_rows_collision: false
 
 crop_randomization:
   enabled: false
