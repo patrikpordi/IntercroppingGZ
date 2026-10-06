@@ -14,7 +14,7 @@ Generates alternating crop rows, places plant models, configures lighting, and e
 - **Generator:** `scripts/generate_world.py`
 - **Models:** `models/` (crop_row_a, crop_row_b, ground, weed)
 - **Output world:** `worlds/intercrop_world.sdf`
-- **Config:** `config/config.yaml` (tweak layout and spacing)
+- **Config:** `config/config.default.yaml` (shared defaults), optionally overridden by a local `config/config.yaml`
 
 ---
 
@@ -63,13 +63,26 @@ ros2 run intercropping_gz generate_world.py
 gz sim --verbose 3 "$(ros2 pkg prefix intercropping_gz)/share/intercropping_gz/worlds/intercrop_world.sdf"
 ```
 
-> Using `--symlink-install` means edits to `config/config.yaml` or the models take effect immediately without rebuilding.
+> The world file is generated and not tracked in git, so run `generate_world.py` after cloning (and after any config change) before launching Gazebo.
+>
+> Using `--symlink-install` means edits to the config files or the models take effect immediately without rebuilding.
 
 ---
 
 ## Configuration
 
-Edit `config/config.yaml` to change basic parameters such as:
+Shared defaults live in `config/config.default.yaml`, which is tracked in git. To tweak things locally, create `config/config.yaml` (gitignored) containing only the keys you want to change; it is deep-merged on top of the defaults. For example:
+
+```yaml
+field:
+  row_length: 10.0
+crops:
+  even_rows_collision: false
+```
+
+New parameters that everyone needs belong in `config/config.default.yaml`.
+
+Available parameters include:
 
 - `field.num_rows`, `field.row_length`, `field.row_spacing`, `field.plant_spacing`
 - `origin.start_x`, `origin.start_y`, `origin.plant_z`
@@ -81,7 +94,7 @@ Edit `config/config.yaml` to change basic parameters such as:
 - `lighting` and `sun` — scene ambient/background and sun pose/color/direction
 - `world.name`, `world.output_file`
 
-The generator resolves its own package share directory via `ament_index_python`, loads `config/config.yaml` from it, places models from `models/`, and writes the SDF to `worlds/intercrop_world.sdf` (back in the source tree if installed with `--symlink-install`).
+The generator resolves its own package share directory via `ament_index_python`, loads `config/config.default.yaml` (plus local `config/config.yaml` overrides, if present), places models from `models/`, and writes the SDF to `worlds/intercrop_world.sdf` (back in the source tree if installed with `--symlink-install`).
 
 See the generator itself for the full list of options: [scripts/generate_world.py](scripts/generate_world.py)
 
@@ -92,8 +105,8 @@ See the generator itself for the full list of options: [scripts/generate_world.p
 - `package.xml`, `CMakeLists.txt` — ROS 2 (ament_cmake) package definition
 - `models/` — Gazebo model folders (crop_row_a, crop_row_b, ground, weed)
 - `scripts/generate_world.py` — world generator, installed as a `ros2 run` executable
-- `worlds/` — generated SDF files (output)
-- `config/config.yaml` — generator configuration
+- `worlds/` — generated SDF files (output, gitignored)
+- `config/config.default.yaml` — generator configuration (defaults); `config/config.yaml` — optional local overrides (gitignored)
 
 ---
 

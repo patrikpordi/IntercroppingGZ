@@ -14,7 +14,7 @@ spherical_coordinates:
 
 field:
   num_rows: 10
-  row_length: 10.0
+  row_length: 15.0
   row_spacing: 1.0
   plant_spacing: 0.25
 
@@ -25,9 +25,9 @@ origin:
 
 crops:
   even_rows: crop_row_a
-  even_rows_collision: false
+  even_rows_collision: true
   odd_rows: crop_row_b
-  odd_rows_collision: false
+  odd_rows_collision: true
 
 crop_randomization:
   enabled: false
